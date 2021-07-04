@@ -245,10 +245,13 @@ body {
 /* ======FEATURE====== */
 
 .icon-fon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: var(--set-gap);
   background: var(--secondary-background);
   border-radius: 4px;
-  padding: 25px 100px;
+  padding: 25px 0px;
 }
 
 .icon-feature {
@@ -505,9 +508,12 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-.gallery-list-item:hover,
-.gallery-list-item:focus {
+.gallery-link:hover,
+.gallery-link:focus {
   background: var(--accessary-color);
-  border: 1px solid #eeeeee;
   box-shadow: var(--box-shadow-gallery);
+}
+
+.gallery-link {
+  display: block;
 }
